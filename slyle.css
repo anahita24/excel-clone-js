@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+.page-actions-container {
+  height: 3rem;
+  background-color: #d9b18e;
+  color: #f2f1ef;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.cell-prop-action-container {
+  height: 3rem;
+  background-color: #f2f1ef;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.cell-prop-action-container:hover{
+  cursor: pointer;
+}
+
+.cell-prop-action-container>* {
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 1rem;
+}
+
+.formula-action-container {
+  height: 2rem;
+  background-color: #f2f1ef;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.grid-container {
+  height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+  position: relative;
+  overflow: scroll;
+}
+
+.formula-icon {
+  width: 1.2rem;
+}
+
+.font-family-prop,
+.font-size-prop {
+  padding: 0.1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+}
+
+.sheet-container {
+  height: 2rem;
+  background-color: #f2f1ef;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  /*#d9d2cc
+#f2f1ef
+#d9b18e
+#a67564
+#723e31*/
+}
+
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.sheets-folder-container {
+  height: 80%;
+  width: 5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: calc(100vw - 2vw);
+  padding: 0.1rem;
+}
+
+.formula-action-container input {
+  border: none;
+  outline: none;
+}
+
+.formula-action-container * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.formula-bar {
+  width: calc(1000vw - 5rem - 0.7rem - 0.7rem - 0.7rem);
+}
+
+.sheet-folder {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+}
+
+.page-action {
+  margin: 0.5rem;
+}
+
+.top-left-dummy-box {
+  height: 2rem;
+  width: 2rem;
+  background-color: #f2f1ef  ;
+  border: 1px solid #b9b8b8;
+  position: fixed;
+  z-index: 1;
+}
+
+.address-col-container {
+  background-color: #f2f1ef;
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  display: block;
+}
+
+.address-row-container {
+  background-color: #f2f1ef;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  position: sticky;
+  top:0;
+  left: 2rem;
+}
+
+.cells-container {
+  background-color: #f2f1ef;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.address-col{
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #b9b8b8;
+}
+
+.address-row , .cell{
+  height: 2rem;
+  width: 5rem;
+  text-align: center;
+  border: 1px solid #b9b8b8;
+}
+.cell{
+  outline: none;
+}
+.row-container{
+  display: flex;
+}
+
+.address-bar{
+  text-align: center;
+}
+
+.color-prop > input{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.color-prop{
+  position: relative;
+}
+
+.font-color-prop{
+
+}
+
+.BG-prop{
+position: relative;
+}
+
+.BG-prop input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  opacity: 0;
+}
