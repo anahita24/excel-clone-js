@@ -11,5 +11,14 @@ for (let i = 0; i < rows; i++) {
 
 
 function isGraphCyclic(){
-    
+    // Dependency -> visited , dfsVisited; 
+    let visited = [];
+    let dfsVisited = [];
+
+for (let i = 0; i < rows; i++) {
+  for (let j = 0; j < cols; j++) {
+   
+    visited.push([]);
+    dfsVisited.push([]);
+  }  
 }
