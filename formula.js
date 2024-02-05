@@ -67,8 +67,7 @@ function removeChildFromGraphComponent(formula, childAddress) {
 
 function updateChildrenCells(parentAddress) {
     let [parentCell, parentCellProp] = getActiveCell(parentAddress);
-    let children = parentCellProp.children;
-
+    
     for (let i = 0; i < children.length; i++) {
         let childAddress = children[i];
         let [childCell, childCellProp] = getActiveCell(childAddress);
