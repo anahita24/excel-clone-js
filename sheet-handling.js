@@ -15,7 +15,7 @@ let sheetsFolderContainer = document.querySelector('.sheets-folder-container');
 sheetsFolderContainer.appendChild(sheet);
 createSheetDB();
 createGraphComponentMatrix();
-handleSheetActiveness();
+handleSheetActiveness(sheet);
 })
 
 function createSheetDB(){
@@ -62,5 +62,25 @@ collectedGraphComponent.push(graphComponentMatrix);
 }
 
 function handleSheetActiveness(){
-    
+   sheet.addEventListener('click', ()=>{
+    let sheetIdx = Number(sheet.getAttribute("id"));
+    handleSheetDb(sheetIdx);
+    handleSheetProperties();
+   })
+}  
+
+function handleSheetDb(){
+sheetDb = collectedSheedDb[sheetIdx];
+graphComponentMatrix = collectedGraphComponent[sheetIdx];
 }
+
+function handleSheetProperties(){
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            let cell = document.createElement('div');
+            cell.click();
+        }
+        
+    }
+}
+

@@ -1,26 +1,26 @@
 let sheetDb=[];
 
 
-for (let i = 0; i < rows; i++) {
-    let sheetRow = [];
-  for (let j = 0; j < cols; j++) {
-    let cellProp ={
-       bold: false,
-       italic: false,
-       underline: false,
-       alignment : 'left',
-       fontFamily: "monospace",
-       fontSize: 14,
-       fontColor: "#000000",
-       value: '',
-       formula: '',
-       BGColor: "#f2f1ef",  // just for indication purpose default value 
-       children:[],
-    }
-    sheetRow.push(cellProp);
-  }  
-  sheetDb.push(sheetRow);  
-}
+// for (let i = 0; i < rows; i++) {
+//     let sheetRow = [];
+//   for (let j = 0; j < cols; j++) {
+//     let cellProp ={
+//        bold: false,
+//        italic: false,
+//        underline: false,
+//        alignment : 'left',
+//        fontFamily: "monospace",
+//        fontSize: 14,
+//        fontColor: "#000000",
+//        value: '',
+//        formula: '',
+//        BGColor: "#f2f1ef",  // just for indication purpose default value 
+//        children:[],
+//     }
+//     sheetRow.push(cellProp);
+//   }  
+//   sheetDb.push(sheetRow);  
+// }
 
 
 //Selectors for cell property
