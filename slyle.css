@@ -197,3 +197,55 @@ position: relative;
   left:0;
   opacity: 0;
 }
+
+.sheet-actions-cont {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+  background-color: #ecf0f1;
+  justify-content: center;
+  text-align: center;
+}
+.sheet-add-icon {
+  width: 2vw;
+  height: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+.sheet-add-icon:hover {
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+}
+
+.sheets-folder-cont {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 5rem;
+  overflow: auto;
+  justify-content: center;
+}
+.sheet-folder {
+  height: 80%;
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+  /* background-color: lightblue; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto ;
+}
+.sheet-content {
+  width: 5rem;
+  /* background-color: lightgreen; */
+}
+
