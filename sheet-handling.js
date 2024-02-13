@@ -82,5 +82,7 @@ function handleSheetProperties(){
         }
         
     }
+    let firstCell = document.querySelector('.cell');
+firstCell.click();
 }
 
