@@ -86,3 +86,11 @@ function handleSheetProperties(){
 firstCell.click();
 }
 
+function handleSheetUI(sheet){
+    let allSheetFolders = document.querySelectorAll(".sheet-folder");
+   for(let i = 0; i<allSheetFolders.length; i++){
+    allSheetFolders[i].style.backgroundColor = 'transparent';
+   }
+   sheet.style.backgroundColor ="#ced6e0";
+}
+
