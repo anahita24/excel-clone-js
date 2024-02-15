@@ -1,5 +1,6 @@
 let sheetDb=[];
-let collectedSheedDb = [];
+let collectedSheetDB = [];
+let collectedGraphComponent= [];
 
 {
   let addSheetBtn = document.querySelector('.sheet-add-icon');
