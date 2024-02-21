@@ -20,7 +20,9 @@ function handleSelectedCell(cell){
     cell.addEventListener("click", (e)=>{
         // Select cells range work 
         if(!ctrlKey) return;
-        if(rangeStorage.length >= 2) return;
+        if(rangeStorage.length >= 2) {
+            rangeStorage = false;
+        };
         
         //UI 
         cell.style.border = "3px solid #218c74";
