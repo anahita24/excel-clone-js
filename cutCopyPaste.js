@@ -11,6 +11,7 @@ document.addEventListener("keyup", (e)=>{
 for(let i=0; i< rows; i++){
     for(let j=0; j<cols; j++){
         let cell = document.querySelector(`.cell[rid="${i}"][cid="${j}"]`);
+        handleSelectedCell(cell);
     }
 }
 let rangeStorage = [];
@@ -27,5 +28,6 @@ function handleSelectedCell(cell){
         let rid = Number(cell.getAttribute("rid"));
         let cid = Number(cell.getAttribute("cid"));
         rangeStorage.push([rid, cid]);
+        console.log(rangeStorage, 'range storage');
     })
 }
