@@ -22,6 +22,7 @@ function handleSelectedCell(cell){
         if(!ctrlKey) return;
         if(rangeStorage.length >= 2) {
             handleSelectedCellUI();
+            rangeStorage = [];
         };
         
         //UI 
@@ -30,13 +31,12 @@ function handleSelectedCell(cell){
         let rid = Number(cell.getAttribute("rid"));
         let cid = Number(cell.getAttribute("cid"));
         rangeStorage.push([rid, cid]);
-        console.log(rangeStorage, 'range storage');
     })
 }
 
 function handleSelectedCellUI(){
     for(let i=0; i< rangeStorage.length; i++){
-        let cell = document.querySelector(`.cell[rid="${rangeStorage[i][0]}"][cid="${rangeStorage[j][0]}"]`);
-
+        let cell = document.querySelector(`.cell[rid="${rangeStorage[i][0]}"][cid="${rangeStorage[1][1]}"]`);
+       cell.style.border ='' ;
     }
 }
