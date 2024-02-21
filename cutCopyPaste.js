@@ -21,7 +21,7 @@ function handleSelectedCell(cell){
         // Select cells range work 
         if(!ctrlKey) return;
         if(rangeStorage.length >= 2) {
-            rangeStorage = false;
+            handleSelectedCellUI();
         };
         
         //UI 
@@ -32,4 +32,11 @@ function handleSelectedCell(cell){
         rangeStorage.push([rid, cid]);
         console.log(rangeStorage, 'range storage');
     })
+}
+
+function handleSelectedCellUI(){
+    for(let i=0; i< rangeStorage.length; i++){
+        let cell = document.querySelector(`.cell[rid="${rangeStorage[i][0]}"][cid="${rangeStorage[j][0]}"]`);
+
+    }
 }
