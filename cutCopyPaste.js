@@ -54,7 +54,7 @@ copyBtn.addEventListener("click", (e) => {
     for (let i = strow;i <= endrow;i++) {
         let copyRow = [];
         for (let j = stcol;j <= endcol;j++) {
-            let cellProp = sheetDB[i][j];
+            let cellProp = sheetDb[i][j];
             copyRow.push(cellProp);
         }
         copyData.push(copyRow);
@@ -73,7 +73,7 @@ cutBtn.addEventListener("click", (e) => {
             let cell = document.querySelector(`.cell[rid="${i}"][cid="${j}"]`);
 
             // DB
-            let cellProp = sheetDB[i][j];
+            let cellProp = sheetDb[i][j];
             cellProp.value = "";
             cellProp.bold = false;
             cellProp.italic = false;
@@ -114,7 +114,7 @@ pasteBtn.addEventListener("click" ,(e) => {
 
             // DB
             let data = copyData[r][c];
-            let cellProp = sheetDB[i][j];
+            let cellProp = sheetDb[i][j];
 
             cellProp.value = data.value;
             cellProp.bold = data.bold;

@@ -17,7 +17,7 @@ addSheetBtn.addEventListener("click", (e) => {
     sheet.scrollIntoView();
 
     // DB
-    createSheetDB();
+    createsheetDb();
     createGraphComponentMatrix();
     handleSheetActiveness(sheet);
     handleSheetRemoval(sheet);
@@ -40,13 +40,13 @@ function handleSheetRemoval(sheet) {
 
         let sheetIdx = Number(sheet.getAttribute("id"));
         // DB
-        collectedSheetDB.splice(sheetIdx, 1);
+        collectedsheetDb.splice(sheetIdx, 1);
         collectedGraphComponent.splice(sheetIdx, 1);
         // UI
         handleSheetUIRemoval(sheet)
 
         // By default DB to sheet 1 (active)
-        sheetDB = collectedSheetDB[0];
+        sheetDb = collectedsheetDb[0];
         graphComponentMatrix = collectedGraphComponent[0];
         handleSheetProperties();
     })
@@ -65,8 +65,8 @@ function handleSheetUIRemoval(sheet) {
     allSheetFolders[0].style.backgroundColor = activeSheetColor;
 }
 
-function handleSheetDB(sheetIdx) {
-    sheetDB = collectedSheetDB[sheetIdx];
+function handlesheetDb(sheetIdx) {
+    sheetDb = collectedsheetDb[sheetIdx];
     graphComponentMatrix = collectedGraphComponent[sheetIdx];
 }
 
@@ -93,15 +93,14 @@ function handleSheetUI(sheet) {
 function handleSheetActiveness(sheet) {
     sheet.addEventListener("click", (e) => {
         let sheetIdx = Number(sheet.getAttribute("id"));
-        handleSheetDB(sheetIdx);
+        handlesheetDb(sheetIdx);
         handleSheetProperties();
         handleSheetUI(sheet);
-        console.log(sheetDB);
     })
 }
 
-function createSheetDB() {
-    let sheetDB = [];
+function createsheetDb() {
+    let sheetDb = [];
     for (let i = 0; i < rows; i++) {
         let sheetRow = [];
         for (let j = 0; j < cols; j++) {
@@ -120,9 +119,9 @@ function createSheetDB() {
             }
             sheetRow.push(cellProp);
         }
-        sheetDB.push(sheetRow);
+        sheetDb.push(sheetRow);
     }
-    collectedSheetDB.push(sheetDB);
+    collectedsheetDb.push(sheetDb);
 }
 
 function createGraphComponentMatrix() {

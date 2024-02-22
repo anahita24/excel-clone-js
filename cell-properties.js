@@ -1,11 +1,8 @@
-let sheetDb=[];
-let collectedSheetDB = [];
-let collectedGraphComponent= [];
-
+let collectedsheetDb = [];  //Contains all sheetDb
+let collectedGraphComponent = [];
 {
-  let addSheetBtn = document.querySelector('.sheet-add-icon');
-  addSheetBtn.click();
-  handleSheetProperties();
+    let addSheetBtn = document.querySelector(".sheet-add-icon");
+    addSheetBtn.click();
 }
 // for (let i = 0; i < rows; i++) {
 //     let sheetRow = [];
