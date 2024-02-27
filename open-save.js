@@ -6,4 +6,8 @@ downloadBtn.addEventListener("click", (e)=>{
   let file = new Blob([jsonData], {
     type: "application/json"
   })
+  let a = document.createElement("a");
+  a.href = URL.createObjectURL(file);
+  a.download = "SheetData.json";
+  a.click();
 })
