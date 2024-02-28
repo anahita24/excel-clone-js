@@ -32,11 +32,11 @@ openBtn.addEventListener("click", (e) => {
             addSheetBtn.click();
 
             // SheetDB, graphComponent
-            sheetDB = readSheetData[0];
+            sheetDb = readSheetData[0];
             graphComponentMatrix = readSheetData[1];
 
-            collectedSheetDB[collectedSheetDB.length-1] = sheetDB;
-            collectedGraphComponent[collectedGraphComponent.length-1] = graphComponentMatrix;
+            collectedSheetDB[collectedSheetDB.length-1] = sheetDb;
+                        collectedGraphComponent[collectedGraphComponent.length-1] = graphComponentMatrix;
 
             handleSheetProperties();
         })
