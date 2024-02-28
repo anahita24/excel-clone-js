@@ -1,5 +1,5 @@
 let sheetDb=[];
-let collectedSheetDB = [];
+let collectedsheetDb = [];
 let collectedGraphComponent= [];
 
 {
@@ -36,7 +36,7 @@ let underline = document.querySelector(".underline");
 let fontSize = document.querySelector(".font-size-prop");
 let fontFamily = document.querySelector('.font-family-prop');
 let fontColor = document.querySelector(".font-color-prop");
-let BGColor = document.querySelector('.BGcolor-prop');
+let BGColor = document.querySelector('.BGColor-prop');
 let alignment = document.querySelectorAll('.alignment');
 let leftAlign = alignment[0];
 let centerAlign = alignment[1];
