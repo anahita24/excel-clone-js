@@ -23,6 +23,7 @@ openbtn.addEventListener("click",()=>{
     fr.readAsArrayBuffer(fileObj);
     fr.addEventListener("load", (e)=>{
       let readSheetData = JSON.parse( fr.result);
+      addSheetBtn.click();
     })
   })
     
