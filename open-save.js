@@ -14,7 +14,16 @@ downloadBtn.addEventListener("click", (e)=>{
 
 openbtn.addEventListener("click",()=>{
   let input = document.createElement("input");
-  input.setAttribute()
-    var fr = new FileReader();
+  input.setAttribute("type", "file");
+  input.click();
+  input.addEventListener("change",()=>{
+    let fr = new FileReader();
+    let files = input.files[0];
+    let fileObj = files[0];
+    fr.readAsArrayBuffer(fileObj);
+    fr.addEventListener("load", (e)=>{
+      let readSheetData = JSON.parse( fr.result);
+    })
+  })
     
 })
