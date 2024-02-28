@@ -24,6 +24,8 @@ openbtn.addEventListener("click",()=>{
     fr.addEventListener("load", (e)=>{
       let readSheetData = JSON.parse( fr.result);
       addSheetBtn.click();
+      sheetDB = readSheetData[0];
+      graphComponentMatrix = readSheetData[1];
     })
   })
     
